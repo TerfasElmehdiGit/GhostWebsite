@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Ghost Mail AI Bridge</title>
+    <meta name="description" content="Privacy Policy for Ghost - The Zero-Data Bridge for Secure AI Email.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="logo.png">
+    <style>
+        .content-container {
+            max-width: 800px;
+            margin: 4rem auto;
+            padding: 3rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 24px;
+            backdrop-filter: blur(20px);
+        }
+
+        .policy-section {
+            margin-bottom: 2.5rem;
+        }
+
+        .policy-section h2 {
+            color: var(--accent);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .policy-section p {
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+        }
+
+        .policy-section ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .policy-section li {
+            color: var(--text-muted);
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+        }
+
+        .policy-section li::before {
+            content: "•";
+            color: var(--accent);
+            font-weight: bold;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-muted);
+            text-decoration: none;
+            margin-bottom: 2rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .back-link:hover {
+            color: var(--accent);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background-effects">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <a href="index.html"
+                    style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 0.5rem;">
+                    <img src="logo.png" alt="Ghost Logo" class="ghost-icon-img" width="32" height="32"
+                        style="border-radius: 6px;">
+                    Ghost Mail Agent
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html#features">Features</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="content-container">
+            <a href="index.html" class="back-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+                Back to Home
+            </a>
+
+            <h1 class="hero-title" style="font-size: 2.5rem; text-align: left; margin-bottom: 3rem;">Privacy <span
+                    class="highlight">Policy</span></h1>
+
+            <div class="policy-section">
+                <h2>Our Data Philosophy</h2>
+                <p>Ghost was built with a single core principle: <strong>Your data is yours alone.</strong> We do not
+                    store, process, or ever see your email credentials or message content. Our architecture is
+                    fundamentally designed to be "Zero-Data" by hosting everything locally on your own machine.</p>
+            </div>
+
+            <div class="policy-section">
+                <h2>What Information We Collect</h2>
+                <p>We believe in radical data minimalism:</p>
+                <ul>
+                    <li><strong>No Email Data:</strong> We do not collect or store your emails, attachments, or contact
+                        lists.</li>
+                    <li><strong>No Credentials:</strong> Your IMAP/SMTP passwords stay encrypted on your local machine.
+                    </li>
+                    <li><strong>Limited Analytics:</strong> We may collect anonymous usage statistics (e.g., number of
+                        tool calls) to maintain free tier limits, but this is never linked to your identity or email
+                        content.</li>
+                </ul>
+            </div>
+
+            <div class="policy-section">
+                <h2>How Your Data is Processed</h2>
+                <p>The extension acts as a secure bridge between your chosen AI (ChatGPT, Gemini, etc.) and your Local
+                    Ghost Server:</p>
+                <ul>
+                    <li>The <strong>Extension</strong> runs in your browser and communicates with the AI UI.</li>
+                    <li>The <strong>Local Server</strong> runs on your PC and handles the direct connection to your
+                        email provider.</li>
+                    <li>Communication between the extension and server happens via a secure, local-only WebSocket.</li>
+                </ul>
+            </div>
+
+            <div class="policy-section">
+                <h2>Third-Party AI Providers</h2>
+                <p>When you ask an AI to summarize or write an email, the relevant parts of your emails are sent to that
+                    AI provider (e.g., OpenAI, Google). Please refer to the privacy policies of the Large Language Model
+                    you are using for details on how they handle session context.</p>
+            </div>
+
+            <div class="policy-section">
+                <h2>Your Control</h2>
+                <p>You can disconnect your email accounts or stop the local server at any time. Since no data is stored
+                    in the cloud, there is no "account" to delete — simply stopping the service and removing the
+                    extension erases all local traces.</p>
+            </div>
+
+            <div class="policy-section">
+                <h2>Contact</h2>
+                <p>If you have any questions about our privacy-first architecture, please reach out via email
+                    us at <a href="mailto:terfaselmehdi@outlook.com"
+                        style="color: var(--accent); text-decoration: none;">terfaselmehdi@outlook.com</a>.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Ghost - Mail AI Bridge. Built precisely for speed and privacy.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
