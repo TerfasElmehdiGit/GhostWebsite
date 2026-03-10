@@ -33,11 +33,10 @@
 
     <main>
         <header class="hero">
-            <h1 class="hero-title">Bring Your Inbox<br>to the <span class="highlight">AI Era</span></h1>
+            <h1 class="hero-title">The <span class="highlight">Zero-Data</span> Bridge<br>for Secure AI Email</h1>
             <p class="hero-subtitle">
-                Ghost is a secure, local bridge that connects your ChatGPT or Z.ai or Gemini directly to your email
-                inbox. End
-                the endless copy-and-pasting.
+                Ghost is a private, local bridge that connects your AI directly to your inbox.
+                Your credentials and emails <strong>never leave your machine</strong>. 100% cloud-free.
             </p>
             <div class="hero-actions">
                 <a href="Ghost-Server-Windows.zip" download class="btn btn-primary">
@@ -47,13 +46,14 @@
                         <polyline points="7 10 12 15 17 10"></polyline>
                         <line x1="12" y1="15" x2="12" y2="3"></line>
                     </svg>
-                    Download Ghost Server
+                    Download Local Server (Win)
                 </a>
                 <a href="https://chrome.google.com/webstore" class="btn btn-secondary" target="_blank">
-                    Add to Chrome (Coming Soon)
+                    Add Extension (Coming Soon)
                 </a>
             </div>
-            <p class="hero-note">Requires Windows 10/11. No cloud processing—100% local privacy.</p>
+            <p class="hero-note" style="color: #6ee7b7; font-weight: 600;">🛡️ Zero Storage Policy. No Cloud Databases.
+                Locally Hosted.</p>
         </header>
 
         <section id="features" class="features">
@@ -97,13 +97,36 @@
 
                 <div class="feature-card">
                     <div class="feature-icon shield-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="2">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6ee7b7" stroke-width="2">
                             <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
                         </svg>
                     </div>
-                    <h3>100% Privacy Focused</h3>
-                    <p>Ghost does not store your emails on any external database. All communication happens securely on
-                        your local machine.</p>
+                    <h3>Privacy First</h3>
+                    <p>Ghost does not store your emails. All communication happens securely through a local pipe on your
+                        own machine.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="security-deep-dive">
+            <div class="security-content">
+                <h2>Security-First Architecture</h2>
+                <div class="security-grid">
+                    <div class="security-item">
+                        <h4>Local Credentials</h4>
+                        <p>Your IMAP/SMTP keys are encrypted and stored <strong>locally</strong> in your Windows
+                            Registry. We never see them.</p>
+                    </div>
+                    <div class="security-item">
+                        <h4>No Transit Logs</h4>
+                        <p>Data skips our servers entirely. The extension talks directly to your local server via a
+                            secure WebSocket.</p>
+                    </div>
+                    <div class="security-item">
+                        <h4>Zero Databases</h4>
+                        <p>We have no user databases. You are the sole owner of your data, hosted on your
+                            infrastructure.</p>
+                    </div>
                 </div>
             </div>
         </section>
