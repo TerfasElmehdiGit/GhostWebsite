@@ -91,6 +91,11 @@ main {
     -webkit-text-fill-color: transparent;
 }
 
+strong {
+    color: var(--accent);
+    font-weight: 600;
+}
+
 /* Navbar */
 .navbar {
     padding: 1.5rem 2rem;
